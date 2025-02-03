@@ -1,0 +1,227 @@
+/* Existing styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #00adb5;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00ffff;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.section {
+    margin-bottom: 60px;
+}
+
+.section p {
+    font-size: 20px;
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: #00adb5;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00adb5;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.project {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.7);
+    background-color: #2a2a2a; /* Lighten the background on hover */
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+    color: #ffffff;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #bdbdbd;
+}
+
+/* Button Styles */
+.project-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #00adb5;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-button:hover {
+    background-color: #00ffff;
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.6);
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    color: #bdbdbd;
+}
+
+footer a {
+    color: #00adb5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #00ffff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+ul li a {
+    color: #00adb5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #00ffff;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+/* Skills Section Styles */
+#skills {
+    margin-top: 60px;
+}
+
+.skill-category {
+    margin-bottom: 40px;
+}
+
+.skill-category h3 {
+    font-size: 1.75rem;
+    color: #00adb5;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00adb5;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill-box {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.7);
+    background-color: #2a2a2a; /* Lighten the background on hover */
+}
+
+.skill-box h4 {
+    font-size: 1.25rem;
+    margin: 0 0 10px;
+    color: #00adb5;
+}
+
+.skill-box p {
+    font-size: 1rem;
+    color: #bdbdbd;
+}   
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+}
