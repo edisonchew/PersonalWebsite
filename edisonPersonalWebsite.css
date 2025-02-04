@@ -210,7 +210,11 @@ img {
 .skill-box p {
     font-size: 1rem;
     color: #bdbdbd;
-}   
+}  
+
+.github-icon {
+    filter: invert(100%) brightness(200%);
+}
 
 @media (max-width: 768px) {
     header h1 {
